@@ -14,6 +14,57 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Categories from './components/Categories'
 import PlayerView from './components/Player'
+const IMAGES = {
+  telugu:[
+    require('./images/telugu/telugu-01.jpg'),
+    require('./images/telugu/telugu-02.jpg'),
+    require('./images/telugu/telugu-03.jpg'),
+    require('./images/telugu/telugu-04.jpg'),
+    require('./images/telugu/telugu-05.jpg'),
+    require('./images/telugu/telugu-06.jpg'),
+    require('./images/telugu/telugu-07.jpg'),
+    require('./images/telugu/telugu-08.jpg'),
+    require('./images/telugu/telugu-09.jpg'),
+    require('./images/telugu/telugu-10.jpg'),
+  ],
+  tamil:[
+    require('./images/tamil/tamil-01.jpg'),
+    require('./images/tamil/tamil-02.jpg'),
+    require('./images/tamil/tamil-03.jpg'),
+    require('./images/tamil/tamil-04.jpg'),
+    require('./images/tamil/tamil-05.jpg'),
+    require('./images/tamil/tamil-06.jpg'),
+    require('./images/tamil/tamil-07.jpg'),
+    require('./images/tamil/tamil-08.jpg'),
+    require('./images/tamil/tamil-09.jpg'),
+    require('./images/tamil/tamil-10.jpg'),
+  ],
+  hindi:[
+    require('./images/hindi/hindi-01.jpg'),
+    require('./images/hindi/hindi-02.jpg'),
+    require('./images/hindi/hindi-03.jpg'),
+    require('./images/hindi/hindi-04.jpg'),
+    require('./images/hindi/hindi-05.jpg'),
+    require('./images/hindi/hindi-06.jpg'),
+    require('./images/hindi/hindi-07.jpg'),
+    require('./images/hindi/hindi-08.jpg'),
+    require('./images/hindi/hindi-09.jpg'),
+    require('./images/hindi/hindi-10.jpg'),
+  ],
+  kannada:[
+    require('./images/kannada/kannada-01.jpg'),
+    require('./images/kannada/kannada-02.jpg'),
+    require('./images/kannada/kannada-03.jpg'),
+    require('./images/kannada/kannada-04.jpg'),
+    require('./images/kannada/kannada-05.jpg'),
+    require('./images/kannada/kannada-06.jpg'),
+    require('./images/kannada/kannada-07.jpg'),
+    require('./images/kannada/kannada-08.jpg'),
+    require('./images/kannada/kannada-09.jpg'),
+    require('./images/kannada/kannada-10.jpg'),
+  ]
+
+}
 
 class App extends React.Component {
 
@@ -24,6 +75,7 @@ class App extends React.Component {
         {
           title: 'Telugu',
           key: 'telugu',
+          albumArtArray: IMAGES.telugu,
           albumArt: require('./images/telugu.jpg'),
           streamLink: 'http://14123.live.streamtheworld.com:80/SAM04AAC238_SC',
           categories: [
@@ -48,18 +100,21 @@ class App extends React.Component {
         {
           title: 'Hindi',
           key: 'hindi',
+          albumArtArray: IMAGES.hindi,
           albumArt: require('./images/Hindi.jpg'),
           streamLink: 'http://14123.live.streamtheworld.com:80/SAM04AAC252_SC',
         },
         {
           title: 'Tamil',
           key: 'tamil',
+          albumArtArray: IMAGES.tamil,
           albumArt: require('./images/tamil.png'),
           streamLink: 'http://14123.live.streamtheworld.com:80/SAM05AAC095_SC',
         },
         {
           title: 'Kannada',
           key: 'kannada',
+          albumArtArray: IMAGES.kannada,
           albumArt: require('./images/kannada.jpg'),
           streamLink: 'http://14123.live.streamtheworld.com:80/SAM02AAC169_SC',
         }

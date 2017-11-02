@@ -10,11 +10,12 @@ import {
 } from 'react-native';
 
 function Language(props){
+  
   return(
     <TouchableOpacity onPress={props.onSelect}>
       <View style={styles.language}>
         <Image style={styles.ablumArt}
-            source={props.item.albumArt}/>
+            source={props.item.albumArtArray[Math.floor(Math.random() * 11)]}/>
         <View style={styles.title}>
           <Text style={styles.titleText}>{props.item.title}</Text>
         </View>

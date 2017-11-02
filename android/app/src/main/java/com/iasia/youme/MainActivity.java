@@ -1,4 +1,4 @@
-package com.youme;
+package com.iasia.youme;
 
 import com.facebook.react.ReactActivity;
 

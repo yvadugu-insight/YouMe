@@ -1,4 +1,4 @@
-package com.youme;
+package com.iasia.youme;
 
 import android.content.Intent;
 import android.os.Bundle;
